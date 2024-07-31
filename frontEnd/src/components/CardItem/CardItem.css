@@ -1,0 +1,116 @@
+.card-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: .3s;
+    animation: fadeIn 1s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.card-item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card-item-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-item-img-container {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-item-info {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-item-name-rating p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-item-desc {
+    color: #676767;
+    font-size: 12px;
+}
+
+.card-item-price {
+    color: tomato;
+    font-size: 500;
+    margin: 10px 0;
+}
+
+.card-item-img-container {
+    position: relative;
+}
+
+.card-item-img-container .add {
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+
+
+}
+
+.card-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;   
+    border-radius: 50px;
+    background-color: #fff;
+}
+.card-item-counter .plus{
+    background-color: rgb(255, 126, 126);
+}
+.card-item-counter .minus{
+    background-color: #00ff00;
+}
+.card-item-counter img {    
+    padding: 5px;
+    width: 25px;
+    margin-top: 0px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-item-counter .add {
+    background-color: rgb(178, 255, 178);
+    color: green;
+}
+
+.card-item-counter .fa-minus {
+    background-color: #ffb5a8;
+    color: tomato;
+}
+
+@media (max-width: 599px) {
+    .card-item-image{
+        height: 250px;
+    }
+}
